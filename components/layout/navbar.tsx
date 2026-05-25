@@ -4,7 +4,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Menu, X } from "lucide-react"
 import { useState } from "react"
-import { useMediaQuery } from "usehooks-ts"
+import { useIsMobile } from "@/hooks/use-mobile"
 import { siteConfig } from "@/lib/config"
 import { ThemeToggle } from "@/components/theme/theme-toggle"
 import { Button } from "@/components/ui/button"
@@ -43,7 +43,7 @@ function NavLinks({ className, onNavigate }: { className?: string; onNavigate?: 
 
 export function Navbar() {
   const [open, setOpen] = useState(false)
-  const isMobile = useMediaQuery("(max-width: 768px)")
+  const isMobile = useIsMobile()
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">

@@ -120,7 +120,7 @@ function NotificationForm() {
     },
   })
 
-  function onSubmit(data: NotificationValues) {
+  function onSubmit(_data: NotificationValues) {
     toast.success("알림 설정이 저장되었습니다")
   }
 
