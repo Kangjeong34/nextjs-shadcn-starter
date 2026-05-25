@@ -55,7 +55,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Hero */}
-      <section className="container mx-auto max-w-screen-xl px-4 py-24 text-center">
+      <section className="container mx-auto max-w-screen-2xl px-4 py-24 text-center">
         <Badge variant="secondary" className="mb-4">
           Next.js 16 · App Router
         </Badge>
@@ -88,7 +88,7 @@ export default function HomePage() {
       <Separator />
 
       {/* Features */}
-      <section className="container mx-auto max-w-screen-xl px-4 py-20">
+      <section className="container mx-auto max-w-screen-2xl px-4 py-20">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight">모든 것이 준비되어 있습니다</h2>
           <p className="mt-3 text-muted-foreground">
@@ -118,7 +118,7 @@ export default function HomePage() {
       <Separator />
 
       {/* CTA */}
-      <section className="container mx-auto max-w-screen-xl px-4 py-24 text-center">
+      <section className="container mx-auto max-w-screen-2xl px-4 py-24 text-center">
         <h2 className="text-3xl font-bold tracking-tight">지금 바로 시작하세요</h2>
         <p className="mt-3 text-muted-foreground">몇 분 안에 프로젝트를 시작할 수 있습니다</p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">

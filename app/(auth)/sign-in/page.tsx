@@ -77,12 +77,13 @@ export default function SignInPage() {
                     <FormItem>
                       <div className="flex items-center justify-between">
                         <FormLabel>비밀번호</FormLabel>
-                        <Link
-                          href="#"
-                          className="text-xs text-muted-foreground hover:text-foreground"
+                        <button
+                          type="button"
+                          className="text-xs text-muted-foreground cursor-not-allowed opacity-60"
+                          disabled
                         >
                           비밀번호 찾기
-                        </Link>
+                        </button>
                       </div>
                       <FormControl>
                         <Input placeholder="••••••••" type="password" autoComplete="current-password" {...field} />

@@ -114,8 +114,8 @@ export default function DashboardPage() {
             <CardContent>
               <div className="space-y-4">
                 {["새 사용자 가입: 홍길동", "주문 #ORD-006 완료", "설정 업데이트됨", "백업 완료"].map(
-                  (log, i) => (
-                    <div key={i} className="flex items-center gap-3 text-sm">
+                  (log) => (
+                    <div key={log} className="flex items-center gap-3 text-sm">
                       <div className="h-2 w-2 rounded-full bg-primary shrink-0" />
                       <span className="text-muted-foreground">{log}</span>
                     </div>

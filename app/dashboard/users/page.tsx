@@ -21,7 +21,16 @@ const stats = [
   { title: "비활성", value: "253", delta: "전월 대비 -5명", trend: "down" as const, icon: UserX },
 ]
 
-const users = [
+interface User {
+  id: number
+  name: string
+  email: string
+  role: "관리자" | "편집자" | "뷰어"
+  status: "활성" | "비활성" | "보류"
+  joinedAt: string
+}
+
+const users: User[] = [
   { id: 1, name: "김민준", email: "minjun@example.com", role: "관리자", status: "활성", joinedAt: "2024-01-15" },
   { id: 2, name: "이서연", email: "seoyeon@example.com", role: "편집자", status: "활성", joinedAt: "2024-02-03" },
   { id: 3, name: "박지호", email: "jiho@example.com", role: "뷰어", status: "비활성", joinedAt: "2024-02-18" },

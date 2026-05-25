@@ -190,7 +190,7 @@ export default function DocsPage() {
             <CardContent>
               <Accordion type="single" collapsible className="w-full">
                 {faqs.map((faq, i) => (
-                  <AccordionItem key={i} value={`faq-${i}`}>
+                  <AccordionItem key={faq.question} value={`faq-${i}`}>
                     <AccordionTrigger className="text-left text-sm font-medium">
                       {faq.question}
                     </AccordionTrigger>

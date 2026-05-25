@@ -113,11 +113,11 @@ export default function SignUpPage() {
                       </FormControl>
                       <div className="text-sm leading-none">
                         <FormLabel className="cursor-pointer font-normal">
-                          <Link href="#" className="underline hover:no-underline">
+                          <Link href="/terms" className="underline hover:no-underline">
                             이용약관
                           </Link>
                           {" "}및{" "}
-                          <Link href="#" className="underline hover:no-underline">
+                          <Link href="/privacy" className="underline hover:no-underline">
                             개인정보 처리방침
                           </Link>
                           에 동의합니다
